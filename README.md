@@ -43,4 +43,4 @@
 
 ##
 ### 主页+项目访客统计（26.08.14——至今）
-![:reindex-ot](https://count.getloli.com/get/@:HeiKe-Tom)
+![:name](https://count.kjchmc.cn/get/@:HeiKe-Tom?theme=minecraft)
