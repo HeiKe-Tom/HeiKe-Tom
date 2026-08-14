@@ -1,9 +1,9 @@
-## 你好! 
+## 你好! (主页版式参照[@cctv18](https://github.com/cctv18))
 <!--
-<img align="right" src="https://github-readme-stats-one-bice.vercel.app/api?username=cctv18&show_icons=true&&bg_color=17150d&title_color=a8c7fa&text_color=e5e5e5&icon_color=FFA07A&border_color=555555&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" />
+<img align="right" src="https://github-readme-stats-one-bice.vercel.app/api?username=HeiKe-Tom&show_icons=true&&bg_color=17150d&title_color=a8c7fa&text_color=e5e5e5&icon_color=FFA07A&border_color=555555&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" />
 -->
 
-这里是cctv18，一名业余安卓开发/内核技术爱好者。
+这里是HeiKe-Tom的GitHub主页，一名业余Windows，安卓开发/内核技术爱好者。
 
 - 🔭 目前主攻方向：安卓/Linux内核源码开发，安卓自定义技术，内核编译自动化工具/流程优化
 - 🌱 擅长的语言：C / C++ / Shell / Python / Java
