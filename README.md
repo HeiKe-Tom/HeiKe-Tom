@@ -1,4 +1,4 @@
-## 你好! (主页版式参照[@cctv18](https://github.com/cctv18))
+## 你好! 
 
 这里是HeiKe-Tom的GitHub主页，一名业余Windows，安卓开发/内核技术爱好者。
 
@@ -17,7 +17,16 @@
 </picture>
 </div>
 
-##
+### 技能与工具
+</h2>
+
+<div align="center">
+  <!-- 使用更美观的动态技能图标 -->
+  <img src="https://skillicons.dev/icons?i=python,cpp,c,java,mysql,pytorch,tensorflow,mongodb,linux,matlab,html,css,js,git,vscode,latex,github,docker&perline=9" />
+  
+  <!-- 添加技能动画卡片 - 改进布局 -->
+  
+</div>
 ### 我的个人作品：（更多代码开发中）
 
 <div align="center">
