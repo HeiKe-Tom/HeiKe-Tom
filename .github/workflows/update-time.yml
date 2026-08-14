@@ -1,0 +1,55 @@
+name: Auto Update Readme Timestamp
+
+on:
+  schedule:
+    - cron: '0 */8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update timestamp in README
+        run: |
+          current_time=$(date +%s)
+          
+          sed -i "s/time=[0-9]\{10\}/time=$current_time/g" README.md
+          
+          echo "Updated timestamps to $current_time"
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          if [[ -n $(git status -s) ]]; then
+            git add README.md
+            LAST_AUTHOR=$(git log -1 --pretty=format:'%an')
+            LAST_MSG=$(git log -1 --pretty=format:'%s')
+            TARGET_MSG="docs: auto update readme timestamp [skip ci]"
+          
+            echo "Last commit author: $LAST_AUTHOR"
+            echo "Last commit message: $LAST_MSG"
+
+            if [[ "$LAST_AUTHOR" == "github-actions[bot]" && "$LAST_MSG" == *"$TARGET_MSG"* ]]; then
+              echo "Found previous bot commit. Amending..."
+              git commit --amend --no-edit
+              git push --force-with-lease
+              echo "Successfully amended the last commit."
+            else
+              echo "Last commit was by human or different. Creating new commit..."
+              git commit -m "$TARGET_MSG"
+              git push
+              echo "Successfully pushed new commit."
+            fi
+          else
+            echo "No changes to commit."
+          fi
