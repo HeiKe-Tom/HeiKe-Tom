@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="220" viewBox="0 0 840 220" role="img" aria-label="HeiKe-Tom/OPPO_OnePlus_Realme-SM8750-Kernel-Builder">
+  <rect x="1" y="1" width="838" height="218" rx="16" fill="#17150d" stroke="#555555" stroke-width="2"/>
+  <rect x="24" y="24" width="8" height="172" rx="4" fill="#a8c0fa"/>
+  <text x="54" y="58" fill="#a8c7fa" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700">HeiKe-Tom/OPPO_OnePlus_Realme-SM8750-Kernel-Builder</text>
+  <text x="54" y="94" fill="#e5e5e5" font-family="Segoe UI,Arial,sans-serif" font-size="15">An automatic kernel builder for Oppo/Oneplus/Realme Snapdragon sm87…</text>
+
+  <circle cx="60" cy="137" r="4" fill="#a8c0fa"/>
+  <text x="74" y="143" fill="#e5e5e5" font-family="Segoe UI,Arial,sans-serif" font-size="15">Shell</text>
+
+  <text x="210" y="143" fill="#e5e5e5" font-family="Segoe UI,Arial,sans-serif" font-size="15">★ 0</text>
+  <text x="310" y="143" fill="#e5e5e5" font-family="Segoe UI,Arial,sans-serif" font-size="15">⑂ 0</text>
+  <text x="410" y="143" fill="#e5e5e5" font-family="Segoe UI,Arial,sans-serif" font-size="15">No license</text>
+
+  <text x="54" y="180" fill="#999999" font-family="Segoe UI,Arial,sans-serif" font-size="13">Updated 2026-08-14 08:34</text>
+  <text x="786" y="180" text-anchor="end" fill="#a8c0fa" font-family="Segoe UI,Arial,sans-serif" font-size="13">github.com</text>
+</svg>
