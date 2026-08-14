@@ -3,7 +3,6 @@ name: Generate Profile Assets
 on:
   schedule:
     - cron: "0 */6 * * *"
-
   workflow_dispatch:
 
 permissions:
@@ -20,22 +19,18 @@ jobs:
       - name: Generate project cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python scripts/generate_project_cards.py
+        run: python scripts/generate_project_cards.py
 
       - name: Generate GitHub stats
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python scripts/generate_stats.py
+        run: python scripts/generate_stats.py
 
-      - name: Commit changes
+      - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add assets/
-
           if git diff --cached --quiet; then
             echo "No changes."
           else
